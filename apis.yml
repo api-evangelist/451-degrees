@@ -1,7 +1,28 @@
 aid: 451-degrees
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/451-degrees.png
 name: 451 Degrees
-description: 451 Degrees is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  451 Degrees is a marketing-technology and ad-tech company founded in 2006 that
+  builds Graffiti, a patented AI content ecosystem for digital content and ad-tech
+  businesses. Graffiti uses machine learning, artificial intelligence, and natural
+  language processing to analyze user-generated comments and digital content in
+  real time, converting comment "noise" into structured data that powers brand
+  safety, contextual relevancy, content recommendation, and first-party data
+  strategies. It is designed as a platform-agnostic tool that complements existing
+  comment platforms, ad delivery networks, and content systems rather than
+  replacing them, and markets itself as privacy-compliant with GDPR and CCPA while
+  using no cookies, mobile IDs, or IDFA for targeting.
 url: https://raw.githubusercontent.com/api-evangelist/451-degrees/refs/heads/main/apis.yml
 x-type: company
 x-source: a16z-portfolio
@@ -12,9 +33,38 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Artificial Intelligence
+- Ad Tech
+- Brand Safety
+- Contextual Advertising
+- Content Moderation
+- Natural Language Processing
+- Machine Learning
+- Marketing Technology
+- Privacy
 apis: []
+common:
+- type: DomainSecurity
+  url: security/451-degrees-domain-security.yml
+- type: Website
+  url: http://www.451degrees.com/
+- type: Product
+  url: http://www.451degrees.com/product/
+- type: About
+  url: http://www.451degrees.com/about/
+- type: Support
+  url: http://www.451degrees.com/contact/
+- type: Twitter
+  url: https://twitter.com/451degrees
+- type: Facebook
+  url: https://www.facebook.com/451DegreesGraffiti
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

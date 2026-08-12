@@ -1,0 +1,26 @@
+generated: '2026-08-12'
+method: searched
+source: http://www.451degrees.com/product/
+plan_count: 0
+currency: null
+plans: []
+note: >-
+  451 Degrees publishes no pricing page and no plans or tiers of any kind. The
+  four-page marketing site (Home / Product / About / Contact) has no /pricing
+  route and no price, quota, or tier language anywhere. The Product page's only
+  commercial calls to action are "Contact Us for a Demo" and two gated one-sheet
+  downloads, and the Contact page is a plain name/email/message form with a
+  captcha. Their own investor one-sheet (AdMonsters, Q2 2018) describes the
+  business model as an "Ad Delivery Network SaaS Model (% of Sales)" that is
+  "FREE until proven ZERO costs to build ADN to 451" — i.e. bespoke revenue-share
+  deals negotiated per partner, not published plans.
+  plan_count is 0 because nothing is published; NO Plans pointer is wired in
+  apis.yml, since this file documents an absence and a pointer would assert the
+  provider publishes a pricing surface they do not.
+x-evidence:
+- url: http://www.451degrees.com/product/
+  status: 200
+  finding: no price, tier, quota or plan language on the page
+- url: http://www.451degrees.com/contact/
+  status: 200
+  finding: demo-request contact form only

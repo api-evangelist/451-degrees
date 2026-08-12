@@ -1,0 +1,24 @@
+generated: '2026-08-12'
+method: searched
+source: http://www.451degrees.com/
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  No rate limits are published, because no API reference is published. 451 Degrees
+  markets Graffiti as integrating via "simple API construction" and their own
+  investor one-sheet claims "Real Time API's" delivered to five ad delivery
+  networks, but there is no developer portal, no reference, and no documentation
+  of quotas, windows, burst behaviour, 429 semantics, or any X-RateLimit-* /
+  RateLimit-* / Retry-After response headers. Every developer-ish hostname
+  (api., developer., docs., dev., portal.) is NXDOMAIN.
+  limit_count is 0 because nothing is documented; NO RateLimits pointer is wired
+  in apis.yml, since this file records a measured absence and the pointer would
+  falsely credit the provider with a published runtime rate-limit signal.
+x-evidence:
+- url: http://www.451degrees.com/product/
+  status: 200
+  finding: marketing description of API integration, no limits or headers documented
+- url: http://www.451degrees.com/docs
+  status: 404
+  finding: no documentation route exists

@@ -1,0 +1,48 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTP probes of the only reachable 451 Degrees host
+host: http://www.451degrees.com
+note: >-
+  Every /.well-known/ path returned HTTP 404 from the WordPress theme's 404 handler
+  (text/html, 68218 bytes — the site's standard not-found page, not a document).
+  No WellKnown or SecurityTxt pointer is wired in apis.yml because nothing was
+  served: this file records a measured ABSENCE, not a presence. 451degrees.com
+  publishes no /.well-known/ surface of any kind.
+  Probed over HTTP because https://www.451degrees.com and https://451degrees.com
+  both fail TLS verification with a self-signed certificate (see
+  security/451-degrees-domain-security.yml), so no HTTPS probe is possible.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+x-evidence:
+  fetched: '2026-08-12'
+  hosts_probed:
+  - http://www.451degrees.com
+  subdomains_resolved: []
+  subdomains_tried:
+  - api.451degrees.com
+  - developer.451degrees.com
+  - dev.451degrees.com
+  - docs.451degrees.com
+  - graffiti.451degrees.com
+  - app.451degrees.com
+  - portal.451degrees.com
+  - mcp.451degrees.com
+  - agent.451degrees.com
+  - status.451degrees.com
+  - trust.451degrees.com
+  - security.451degrees.com
+  - data.451degrees.com
+  subdomain_result: NXDOMAIN on every name tried

@@ -1,15 +1,22 @@
 aid: 451-degrees
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: enterprise
+  onboarding: approval
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Enterprise · Requires approval
+  confidence: high
+  source:
+  - http://www.451degrees.com/product/
+  - http://www.451degrees.com/contact/
+  generated: '2026-08-12'
+  method: searched
+  note: >-
+    No pricing page, no plans, no signup and no developer portal exist. The only
+    published route to Graffiti is the "Contact Us for a Demo" call to action and
+    a name/email/message contact form, so access is enterprise, approval-gated,
+    and not self-serve.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/451-degrees.png
 name: 451 Degrees
 description: >-
@@ -30,7 +37,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-08-12'
 tags:
 - Company
 - Artificial Intelligence
@@ -46,6 +53,10 @@ apis: []
 common:
 - type: DomainSecurity
   url: security/451-degrees-domain-security.yml
+- type: Conformance
+  url: conformance/451-degrees-conformance.yml
+- type: LLMsTxt
+  url: llms/451-degrees-llms.txt
 - type: Website
   url: http://www.451degrees.com/
 - type: Product
@@ -64,7 +75,27 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 5
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    451 Degrees markets Graffiti as integrating "with simple API construction to
+    current Comment Platforms and Ad Delivery Networks" and its own investor
+    one-sheet claims real-time APIs delivered to five ad networks, but the entire
+    public surface is a four-page WordPress marketing site whose only developer
+    call to action is "Contact Us for a Demo" — there is no reference, no portal,
+    and api./developer./docs./dev./portal.451degrees.com are all NXDOMAIN.
+  evidence:
+  - url: http://www.451degrees.com/product/
+    status: 200
+  - url: http://www.451degrees.com/developers/
+    status: 404
+  - url: http://www.451degrees.com/openapi.json
+    status: 404
+  - url: http://www.451degrees.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-08-12'

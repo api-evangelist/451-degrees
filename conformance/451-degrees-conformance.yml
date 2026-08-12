@@ -1,0 +1,64 @@
+generated: '2026-08-12'
+method: searched
+source: http://www.451degrees.com/product/
+note: >-
+  451 Degrees publishes no machine-readable contract, so nothing here is derived
+  from a spec — every entry below is either a claim the company makes in its own
+  marketing copy or a probed technical fact. The two privacy entries are recorded
+  as CLAIMED, not verified: they appear as product-page bullet points with no
+  certification, attestation, DPA, sub-processor list, or trust page behind them.
+  No `Compliance` pointer is wired in apis.yml for exactly that reason — a
+  marketing bullet is not a published compliance program.
+standards:
+- id: gdpr
+  conforms: claimed
+  verified: false
+  evidence: >-
+    Product page asserts "100% Privacy Compliant to GDPR and CCPA standards" and
+    "Uses no Cookies or Mobile ID's, No IDFA needed for targeting". No DPA,
+    privacy policy, sub-processor list or attestation is published to support it.
+  source: http://www.451degrees.com/product/
+- id: ccpa
+  conforms: claimed
+  verified: false
+  evidence: >-
+    Same product-page assertion as GDPR. The company's positioning is that Graffiti
+    targets on content rather than on user identity, which is a plausible basis for
+    the claim, but no compliance documentation is published.
+  source: http://www.451degrees.com/product/
+- id: oauth2
+  conforms: false
+  evidence: no published securityScheme, authorization server, or OAuth documentation
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returned 404
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no published API contract or error reference
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returned 404
+- id: rfc8615-well-known
+  conforms: false
+  evidence: every /.well-known/ path probed returned 404 (see well-known/451-degrees-well-known.yml)
+- id: tls-baseline
+  conforms: false
+  evidence: >-
+    https://www.451degrees.com and https://451degrees.com both fail certificate
+    verification with a self-signed certificate; the site is only reachable over
+    plaintext HTTP. See security/451-degrees-domain-security.yml.
+- id: dnssec
+  conforms: false
+  evidence: no DNSSEC on 451degrees.com (probed)
+- id: dmarc
+  conforms: partial
+  evidence: DMARC record present with policy p=none (monitor only); SPF present; no CAA records
+x-evidence:
+  fetched: '2026-08-12'
+  probes:
+  - url: http://www.451degrees.com/product/
+    status: 200
+  - url: http://www.451degrees.com/.well-known/openid-configuration
+    status: 404
+  - url: http://www.451degrees.com/.well-known/security.txt
+    status: 404

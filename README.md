@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-451 Degrees is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+451 Degrees is a marketing-technology and ad-tech company founded in 2006 that builds Graffiti, a patented AI content ecosystem for digital content and ad-tech businesses. Graffiti uses machine learning, artificial intelligence, and natural language processing to analyze user-generated comments and digital content in real time, converting comment "noise" into structured data that powers brand safety, contextual relevancy, content recommendation, and first-party data strategies. It is designed as a platform-agnostic tool that complements existing comment platforms, ad delivery networks, and content systems rather than replacing them, and markets itself as privacy-compliant with GDPR and CCPA while using no cookies, mobile IDs, or IDFA for targeting.
 
-Source: portfolio company of [a16z](https://github.com/api-evangelist/a16z)
+**Areas:** Company · Artificial Intelligence · AdTech · Brand Safety · Contextual Advertising · Content Moderation · Natural Language Processing · Machine Learning · Marketing Technology · Privacy
+
+## 451 Degrees on APIs.io
+
+Everything profiled for 451 Degrees is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/451-degrees/](https://apis.io/providers/451-degrees/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [451 Degrees Domain Security](https://apis.io/security/451-degrees/451-degrees-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [451 Degrees Plans Pricing](https://apis.io/plans/451-degrees/451-degrees-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [451 Degrees Rate Limits](https://apis.io/rate-limits/451-degrees/451-degrees-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](http://www.451degrees.com/)
+- [Support](http://www.451degrees.com/contact/)
+
+## API Evangelist rating
+
+**Kin Score 5.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/451-degrees/](https://apis.io/providers/451-degrees/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 451 Degrees: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/451-degrees/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
